@@ -1,0 +1,50 @@
+
+
+
+
+
+print (f'At time 1.00 seconds the object is at ({x0:.3f}, {y0:.3f}, {z0:.3f})')
+
+#time: 1.25 seconds
+time25 = 1.25
+x25 = slope_x0 * (time25 - time1)+x1
+y25 = slope_y0 * (time25 - time1)+y1
+z25 = slope_z0 * (time25 - time1)+z1
+
+print (f'At time {round(time25,2):.2f} seconds the object is at ({x25:.3f}, {y25:.3f}, {z25:.3f})')
+
+#time: 1.50 seconds
+time50 = 1.50
+x50 = slope_x0 * (time50 - time1)+x1
+y50 = slope_y0 * (time50 - time1)+y1
+z50 = slope_z0 * (time50 - time1)+z1
+
+
+print (f'At time {round(time50,2):.2f} seconds the object is at ({x50:.3f}, {y50:.3f}, {z50:.3f})')
+
+#time75: 1.75 seconds
+time75 = 1.75
+x75 = slope_x0 * (time75 - time1)+x1
+y75 = slope_y0 * (time75 - time1)+y1
+z75 = slope_z0 * (time75 - time1)+z1
+
+print (f'At time {round(time75,2):.2f} seconds the object is at ({x75:.3f}, {y75:.3f}, {z75:.3f})')
+
+#time : 2.00 seconds
+time2s = 2.00
+x2s = slope_x0 * (time2s - time1)+x1
+y2s = slope_y0 * (time2s - time1)+y1
+z2s = slope_z0 * (time2s - time1)+z1
+
+print (f'At time {round(time2s,2):.2f} seconds the object is at ({x2s:.3f}, {y2s:.3f}, {z2s:.3f})')
+
+
+
+
+
+
+
+#solve for slope 
+#then calculate y = (slope)(x - x1)+y1
+#calculate the position at several intermediate times.
+

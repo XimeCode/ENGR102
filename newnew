@@ -1,0 +1,66 @@
+#By submitting this assignment, I agree to the following:
+#  "Aggies do not lie, cheat, or steal, or tolerate those who do."
+#  "I have not given or received any authorized aid on this assignment."
+#
+#Name:          Ximena Yepez
+#Section:       ENGR 102, Section548
+#Assignment:    LAB: Topic 3 individual
+#Date:          01/09/2025
+#
+
+
+#Calculate the reynolds number for a fluid
+
+
+print("This program calculates the Reynolds number given velocity,length, and viscosity")
+velocity = (float(input("Please enter the velocity (m/s):")))
+print()
+length = (float(input("Please enter the length (m):")))
+print()
+viscosity = (float(input("Please enter the viscosity (m^2/s):")))
+print()
+
+reynolds = velocity * length / viscosity
+
+print(f"Reynolds number is {reynolds:.0f}")
+print()
+
+from math import *
+import math
+#calculate the wavelength of x-rays scattering from a crystal lattice using Bragg's Law
+
+print("This program calculates the wavelength given distance and angle")
+print()
+distance = (float(input("Please enter the distance (nm):")))
+print()
+angle = (float(input("Please enter the angle (degrees):")))
+print()
+wavelength = 2 * distance * math.sin(math.radians(angle))
+print()
+print (f"Wavelength is {wavelength:.4f} nm")
+
+#Calculate the production well with given days, give production rate, given decline rate in 1/day, and hyperbolic constant 0.8
+#using Arps equation 
+
+print("This program calculates the production rate given time, initial rate, and decline rate")
+
+days = (float(input("Please enter the time (days): ")))
+production = (float(input("Please enter the initial rate (barrels/day):")))
+decline = (float(input("Please enter the initial decline rate (1/day):")))
+constant = 0.8
+
+production_rate = production / ((1 + constant * decline * days) ** ( 1 /constant))
+
+print (f"Production rate is {production_rate:.2f} barrels/day")
+ 
+
+#Calculate change of velocity of a fighter jet
+#using Tsiolkovsky rocket equation
+
+print("This program calculates the change of velocity given initial mass, final mass, and exhaust velocity")
+initial = (float(input("Please enter the initial mass (kg):")))
+final = (float(input("Please enter the final mass (kg):")))
+velocity = (float(input("Please enter the exhaust velocity (m/s):")))
+ROC = velocity * math.log(initial / final)
+
+print(f"Change of velocity is {ROC:.1f}, m/s")

@@ -1,0 +1,41 @@
+#By submitting this assignment, I agree to the following:
+#  "Aggies do not lie, cheat, or steal, or tolerate those who do."
+#  "I have not given or received any authorized aid on this assignment."
+#
+#Name:          Ximena Yepez
+#Section:       ENGR 102, Section 548
+#Assignment:    LLab 3.19 Unit Conversions Team
+#Date:          17/09/2025
+#
+
+# Get input from user
+user_input = float(input("Please enter the quantity to be converted: "))
+
+# 1 pound force = 4.44822162 newtons
+pound_to_force = 4.44822162
+pound_force = user_input * pound_to_force
+print(f"{user_input:.2f} pounds force is equivalent to {pound_force:.2f} newtons")
+
+# 1 meter = 3.2808399 feet
+meter_to_feet = 3.2808399
+feet = user_input * meter_to_feet
+print(f"{user_input:.2f} meters is equivalent to {feet:.2f} feet")
+
+# 1 atmosphere = 101.325 kilopascals
+atmosphere_to_kilopascals = 101.325
+kilopascals = user_input * atmosphere_to_kilopascals
+print(f"{user_input:.2f} atmospheres is equivalent to {kilopascals:.2f} kilopascals")
+
+# 1 watt = 3.412142 BTU per hour
+watt_to_btu = 3.412142
+btu = user_input * watt_to_btu
+print(f"{user_input:.2f} watts is equivalent to {btu:.2f} BTU per hour")
+
+# 1 liter per second = 15.850323 gallons per minute
+liter_to_gallons = 15.850323
+gallons = user_input * liter_to_gallons
+print(f"{user_input:.2f} liters per second is equivalent to {gallons:.2f} US gallons per minute")
+
+# Celsius to Fahrenheit conversion: F = (C × 9/5) + 32
+farenheit = (user_input * 9/5) + 32
+print(f"{user_input:.2f} degrees Celsius is equivalent to {farenheit:.2f} degrees Fahrenheit")

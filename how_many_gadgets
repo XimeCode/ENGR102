@@ -1,0 +1,32 @@
+# By submitting this assignment, I agree to the following:
+# "Aggies do not lie, cheat, or steal, or tolerate those who do."
+# "I have not given or received any unauthorized aid on this assignment."
+#
+# Name: Ximena Yepez
+# Section: Section 548
+# Assignment: Lab: Topic 4 activity #2
+# Date: 23/09/2025
+#
+
+
+
+day = int(input("Please enter a positive value for day: "))
+
+
+if day <= 0:
+        print("You entered an invalid number!")
+
+elif (day) <= 10:
+        gadgets_1 = day * 10 #days 1- 10 
+        print(f'The sum total number of gadgets produced on day {day} is {gadgets_1}')
+
+elif day <= 50: #days 11 through 50
+        gadgets_2 = 100  + (11 + day) * (day - 10) //2 #(b2 = (11+ day))(b1 = day - 10) 
+        print(f'The sum total number of gadgets produced on day {day} is {gadgets_2}')
+elif day <= 100:  # days 51 through 100
+        gadgets_3 = 100 + 1220 + (day - 50) * 50 
+        print(f'The sum total number of gadgets produced on day {day} is {gadgets_3}')
+else:
+        print("You entered an invalid number!")
+
+

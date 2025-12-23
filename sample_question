@@ -1,0 +1,13 @@
+
+#18 is a harshad number because 1 + 8 equals 9 and 18 by 9 is 2
+
+
+#print the total number of Harshad numbers found
+
+
+#if 1 <= harshad <= 99:
+
+count = 0 
+for i in range(99)
+    num = i + 1
+    tens = num // 10 # gives the first digit of numbers (tens place)

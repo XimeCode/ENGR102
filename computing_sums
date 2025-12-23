@@ -1,0 +1,30 @@
+# By submitting this assignment, I agree to the following:
+# "Aggies do not lie, cheat, or steal, or tolerate those who do."
+# "I have not given or received any unauthorized aid on this assignment."
+#
+# Name: Ximena Yepez
+# Section: Section 548
+# Assignment: LAB Topic 6 
+# Date: 15/10/2025
+#
+
+#ask user for input
+from math import *
+first_int = int(input("Enter an integer: "))
+second_int =  int(input("Enter another integer: "))
+
+#figure out the ints between first int and second int 
+#sum them 
+
+numsum = 0 #assign variable
+
+if first_int > second_int:
+    first_int, second_int = second_int, first_int 
+
+current = first_int
+while current <= second_int:
+    numsum += current
+    current += 1
+
+print(f"The sum of all integers from {first_int} to {second_int} is {numsum}")
+

@@ -1,0 +1,95 @@
+#By submitting this assignment, I agree to the following:
+#  "Aggies do not lie, cheat, or steal, or tolerate those who do."
+#  "I have not given or received any authorized aid on this assignment."
+#
+#Name:          
+#Section:       
+#Assignment:    
+#Date:          10/09/2025
+#
+
+t0= 12
+x0 = 8
+y0 = 6
+z0 = 7
+
+t2= 85 
+x2 = -5
+y2 = 30
+z2 = 9
+
+#use formula for interpolation
+
+t1= 30 
+
+slope = ((-5)-8)/(85-12)
+x1= slope * (t1 - t0)+x0
+
+slope_y1 = (30-6)/(85-12)
+y1= slope_y1 * (t1 - t0)+y0
+
+slope_z1 = (9-7)/(85-12)
+z1 = (slope_z1) * (t1 - t0)+z0
+
+print ("At time 30.0 seconds:")
+print ("x1 =", x1, "m")
+print ("y1 =", y1, "m")
+print ("z1 =", z1, "m")
+print ("-----------------------")
+
+
+t37 = 37.5
+t38 = 38
+t39 = 39
+t40 = 40
+t41 = 41
+
+x37 = (slope * (t37 - t0))+x0
+y37 = (slope_y1 * (t37 - t0))+y0
+z37 = (slope_z1) * (t37 - t0)+z0
+
+x38 = (slope * (t38 - t0))+x0
+y38 = (slope_y1 * (t38- t0))+y0
+z38 = (slope_z1) * (t38 - t0)+z0
+
+x39 = (slope * (t39 - t0))+x0
+y39 = (slope_y1 * (t39 - t0))+y0
+z39 = (slope_z1) * (t39 - t0)+z0
+
+x40= (slope * (t40 - t0))+x0
+y40 = (slope_y1 * (t40 - t0))+y0
+z40 = (slope_z1) * (t40 - t0)+z0
+
+x41 = (slope * (t41 - t0))+x0
+y41 = (slope_y1 * (t41 - t0))+y0
+z41 = (slope_z1) * (t41 - t0)+z0
+
+print ("At time 37.5 seconds:")
+print ("x3 =", x37, "m")
+print ("y3 =", y37, "m")
+print ("z3=", z37, "m")
+print ("-----------------------")
+
+print ("At time 38 seconds:")
+print ("x4 =", x38, "m")
+print ("y4 =", y38, "m")
+print ("z4=", z38, "m")
+print ("-----------------------")
+
+print ("At time 39 seconds:")
+print ("x4 =", x39, "m")
+print ("y4 =", y39, "m")
+print ("z4=", z39, "m")
+print ("-----------------------")
+
+print ("At time 40 seconds:")
+print ("x4 =", x40, "m")
+print ("y4 =", y40, "m")
+print ("z4=", z40, "m")
+print ("-----------------------")
+
+print ("At time 41 seconds:")
+print ("x4 =", x41, "m")
+print ("y4 =", y41, "m")
+print ("z4=", z41, "m")
+print ("-----------------------")

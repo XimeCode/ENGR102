@@ -1,0 +1,62 @@
+#By submitting this assignment, I agree to the following:
+#  "Aggies do not lie, cheat, or steal, or tolerate those who do."
+#  "I have not given or received any authorized aid on this assignment."
+#
+#Name:          Ximena Yepez
+#Section:       ENGR 102, Section548
+#Assignment:    LAB: Topic 3 individual
+#Date:          01/09/2025
+#
+
+
+def printresult(shape, side, area):
+    '''Print the result of the calculation'''
+    print(f'A {shape} with side {side:.2f} has area {area:.3f}')
+
+# example function call:
+# printresult(<string of shape name>, <float of side>, <float of area>)
+# printresult('square', 2.236, 5)
+# Your code goes here
+
+import math
+
+#formula = sqrt(3)/4 * (SL)^2
+#two decimal places for SL, 3 for area
+shape = ("triangle")
+side = float(input("Please enter the side length: "))
+area = (float((math.sqrt(3) / 4) * (side ** 2)))
+
+printresult (shape, side, area)
+
+# square = side x side = s^2
+shape = ("square")
+area = side ** 2
+
+printresult (shape,side, area)
+
+# regular pentagon = 1/4(sqrt(25 + sqrt(5)) * (a)^2  ))
+
+shape = ("pentagon")
+area =  1/4 * math.sqrt(25 + 10 * math.sqrt(5)) * side**2
+
+printresult (shape, side, area)
+
+# regular hexagon = ((3 sqrt(3)) / 2 ) * a^2
+shape = ("hexagon")
+area = (((3) * math.sqrt(3)) / 2) * (side ** 2)
+
+printresult (shape,side,area)
+
+# regular dodecagon = 3(2 + sqrt(3))a^2
+shape = ("dodecagon")
+area = 3 * (2 + math.sqrt(3)) * side**2
+
+printresult (shape,side,area)
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+
+
+# create a list of lists loop that handles board spaces and range
+board = []
+
+#makes row of nine ".", then appends to board 9 times
+for i in range(9):
+    row = []
+    for j in range(9):
+        row.append(".")
+    board.append(row)
+
+#converts list of dots into a single string
+for row in board:
+    "".join(row)
+
+
+
+#True is user1 turn, false is user2 turn
+user1_turn = True
+
+while True:
+    print("\n  A B C D E F G H I")
+    for i in range(9):
+        print(str(i + 1) + " " + " ".join(board[i]))
+
+    if user1_turn:
+        print("\nUser1's turn (O)")
+    else:
+        print("\nUser2's turn (o)")
+
+    move = input("Where would you like to place your stone? Format: Capital Letter Number Ex: A3 B6 I9\n")
+
+    if move == "stop":
+        print("Game over")
+        break
+
+    letter = (move[0])
+    num = int(move[1])
+
+    #use ord function to convert letter into a column number
+    column = ord(letter) - ord('A')
+    
+    # convert num into row number 
+    row_index = int(num) - 1
+
+    #check for empty spot then place stone
+    if board[row_index][column] == ".":
+        if user1_turn:
+            board[row_index][column] = "O"
+        else:
+            board[row_index][column] = "o"
+        
+        #switch user 1 turn to user2 turn
+        user1_turn = not user1_turn
+    else:
+        print("Space taken")
+
+#print game
+print("\nFinal board: ")
+print("  A B C D E F G H I")
+for i in range(9):
+    print(str(i + 1) + " " + " ".join(board[i]))

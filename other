@@ -1,0 +1,69 @@
+
+# By submitting this assignment, I agree to the following:
+# "Aggies do not lie, cheat, or steal, or tolerate those who do."
+# "I have not given or received any unauthorized aid on this assignment."
+#
+# Names: Ximena Yepez
+# Melanie Barrientos
+# Sophia Treviño
+# Section: Section 548
+# Assignment: Linear Interpolation Lab 2 
+# Date: 06/06/2025
+
+#Part #1:
+
+x1 = 10
+y1 = 2029
+x2 = 55
+y2 = 23029
+x0=25
+#x0 = Time (25)
+
+
+slope = float((y2 - y1) / (x2 - x1))
+print(float(slope))
+
+#set two expressions for the slope equal to each other
+# when time = 25
+# y = (slope)(x-x1)+y1
+position = (float((slope) * (x0 - x1)) + y1)
+print(position)
+
+#print time and position with a line describing what is being output
+print ("Part 1:")
+print ("For t = 25 minutes, the position p =", position ,"kilometers")
+
+
+
+#PART #2:
+
+# distance from houston 
+# radius = 6745 km
+# every time ISS passes houston distance is reset to zero
+
+import math 
+
+#caculate the total distance around the circle the ISS travels 
+radius = 6745
+circumfrence = 2 * math.pi * 6745
+
+t1 = 10
+k1 = 2029
+t2 = 55
+k2 = 23029
+
+#every time the ISS passes directly over Houston, the distance resets to 0
+#k0 = when ISS has not reached houston yet meaning time = 0 (behind houston)
+
+k0 = 2029 - (slope) * 10 
+time = 300 
+
+#calculate the position away from houston at any time 
+
+total_travel = (slope * (time) + k0)
+
+actual_travel = total_travel % circumfrence
+
+print (actual_travel)
+print ("Part 2:")
+print ("For t = 300 minutes, the position p =", actual_travel ,"kilometers")
